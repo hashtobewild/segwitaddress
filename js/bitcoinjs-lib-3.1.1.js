@@ -12413,22 +12413,22 @@ module.exports = {
   bitcoin: {
     messagePrefix: '\x18Bitcoin Signed Message:\n',
     bip32: {
-      public: 0x0488b21e,
-      private: 0x0488ade4
+        public: 0x53414645,
+        private: 0x53616665
     },
-    pubKeyHash: 0x00,
-    scriptHash: 0x05,
-    wif: 0x80
+    pubKeyHash: 0x1c, // 28 decimal
+    scriptHash: 0x3f, // 63 decimal
+    wif: 0x30 // 48 decimal
   },
   testnet: {
     messagePrefix: '\x18Bitcoin Signed Message:\n',
     bip32: {
-      public: 0x043587cf,
-      private: 0x04358394
+        public: 0x534e554c,
+        private: 0x536f756c
     },
-    pubKeyHash: 0x6f,
-    scriptHash: 0xc4,
-    wif: 0xef
+    pubKeyHash: 0x7d, // 125 decimal
+    scriptHash: 0x57, // 87 decimal 
+    wif: 0x0f // 15 decimal 
   },
   litecoin: {
     messagePrefix: '\x19Litecoin Signed Message:\n',
